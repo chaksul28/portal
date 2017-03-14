@@ -59,7 +59,6 @@ html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml
 </body> 
 </html>
 <?php 
-
 $con=mysql_connect("localhost","root","") or die (mysql_error()); 
 $db=mysql_select_db('mydata', $con) or die (mysql_error()); 
 if(isset($_POST['submit'])){ 
@@ -67,7 +66,6 @@ $name=$_POST['name'];
 $email=$_POST['email']; 
 $u_name=$_POST['u_name'];
 $password=$_POST['password'];
-
 if($name==''){ 
 	echo "<script>alert('Enter Your Name')</script>";
 	} 
@@ -87,5 +85,4 @@ if(mysql_query($query)){
 echo "<script>alert('You are Succesfull registered')</script>"; 
 } 
 } 
-
-?>﻿
+?>
